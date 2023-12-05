@@ -5,4 +5,9 @@ const img = document.querySelector('.img');
     .then(response => response.blob())
     .then(data => {
         const objectURL = URL.createObjectURL(data);
-        img.src = objectURL;})}
+        img.src = objectURL;})
+    }
+ 
+    if (key === 'Enter') {
+        changeImg();
+    }
